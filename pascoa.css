@@ -1,89 +1,152 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { padding: 40px; background-color: #fff; }
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
 
-        /* HEADER: Título em cima, Subtítulos na mesma linha abaixo */
-        header { margin-bottom: 30px; }
-        header h1 { font-size: 50px; margin-bottom: 5px; }
-        
-        .sub-header {
-            display: flex;
-            justify-content: space-between; /* H4 na esquerda, H5 na direita */
-            align-items: center;
-        }
-        header h4 { font-size: 14px; color: #666; font-weight: normal; }
-        header h5 { font-size: 20px; color: #888; }
+body{ 
+padding: 40px;
+background-color: #fff;
+}
+    
+header{
+margin-bottom: 30px;
+}
 
-        /* MAIN: Botão de carrinho na direita */
-        .topo-main {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 20px;
-        }
-        .btn-carrinho {
-            font-size: 20px;
-            padding: 8px 12px;
-            cursor: pointer;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            background: #fff;
-        }
+header img {
+display: block;
+float: left;
+font-size: 70%;
+width: 120px; 
+height: auto;
+}
 
-        /* GRID: 4 BLOCOS POR LINHA (O que você pediu) */
-        .vitrine {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* FORÇA 4 POR LINHA */
-            gap: 15px; /* Espaço entre os blocos */
-        }
+header h1{
+font-size: 70px;
+margin-left: 50px;
+margin-bottom: 5px;
+color: #ac7207;
+}
 
-        /* O BLOCO (QUADRADO/RETANGULAR COM BORDAS ARREDONDADAS) */
-        .card-produto {
-            background-color: #f2f2f2; /* Cor do bloco */
-            border-radius: 15px;
-            padding: 10px; /* Bordinha em volta do conteúdo */
-            text-align: center;
-        }
+.sub-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
-        /* IMAGEM DENTRO DO BLOCO (COM BORDAS BRANCAS) */
-        .moldura-foto {
-            background-color: white; /* A bordinha branca solicitada */
-            padding: 5px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            height: 250px; /* Tamanho menor para a imagem não ficar gigante */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
+header h4{
+font-size: 14px;
+color: #666;
+font-weight: normal;
+}
 
-        .moldura-foto img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-            border-radius: 5px;
-            width: 100%;
-            height: 100%;
+header h5{
+font-size: 20px;
+color: #888;
+}
 
-        }
+/* main: botao do carrinho na direita*/
+.topo-main{
+display: flex;
+justify-content: flex-end;
+margin-bottom: 20px;
+}
 
-        /* TEXTOS DO PRODUTO */
-        .nome-produto { 
-            
-            font-size: 18px;      /* Igual ao preco-produto */
-    font-weight: bold;    /* Igual ao preco-produto */
-    color: #000;
-         }
-        .preco-produto { font-size: 18px; font-weight: bold; color: #000; }
+.btn-carrinho{
+font-size: 20px;
+padding: 8px 12px;
+cursor: pointer;
+border-radius: 8px;
+border: 1px solid #ddd;
+background: #fff;
+}
 
-        /* FOOTER */
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .info-contato p { font-size: 13px; margin: 2px 0; }
-        .logo-footer { width: 80px; height: auto; }
+.titulo-secao {
+    font-size: 32px;
+    color: #ac7207;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* grid: 4 ovos por linha */
+.vitrine{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+}
+
+
+/* bloco do ovo */
+.card-produto{
+background-color: #f2f2f2;
+border-radius: 15px;
+padding: 10px;
+text-align: center;
+}
+
+/* lugar das imagens*/
+.moldura-foto{
+background-color: white;
+padding: 5px;
+border-radius: 10px;
+margin-bottom: 10px;
+height: 250px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+/* imagens ovos */
+.moldura-foto img{
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+border-radius: 5px;
+width: 100%;
+height: 100%;
+}
+
+/* texto do produto */
+.nome-produto{      
+font-size: 18px;
+font-weight: bold;
+color: #000;
+}
+
+.preco-produto{
+font-size: 18px;
+font-weight: bold;
+color: #000;
+}
+
+/* footer */
+footer{
+margin-top: 50px;
+padding-top: 20px;
+border-top: 1px solid #eee;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer img{
+display: block;
+margin-left: 20px;
+width: 120px; 
+height: auto;
+}
+
+
+.info-contato p{
+font-size: 13px;
+margin: 2px 0;
+}
+
+.logo-footer{
+width: 80px;
+height: auto;
+}
     
