@@ -19,22 +19,22 @@
 
     <main>
         <div class="topo-main">
-            <button class="btn-carrinho">🛒</button>
+            <button class="btn-carrinho" id="abrir-carrinho">🛒<span id="contador-notas"></span></button>
         </div>
 
         <h2 class="titulo-secao">Tradicionais</h2>
 
         <section class="vitrine">
             
-            <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Branquinho com coco', 80, 'imagens/branquinho com coco.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/branquinho com coco.jpg" alt="">
                 </div>
                 <p class="nome-produto">Branquinho com coco 200g</p>
                 <p class="preco-produto">R$ 80,00</p>
             </div>
-
-            <div class="card-produto">
+            
+            <div class="card-produto" onclick="adicionarAoCarrinho('Brigadeiro', 80, 'imagens/brigadeiro.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/brigadeiro.jpg" alt="">
                 </div>
@@ -42,7 +42,7 @@
                 <p class="preco-produto">R$ 80,00</p>
             </div>
 
-            <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Duo', 80, 'imagens/duo.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/duo.jpg" alt="">
                 </div>
@@ -50,15 +50,15 @@
                 <p class="preco-produto">R$ 80,00</p>
             </div>
 
-            <div class="card-produto">
-                <div class="moldura-foto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Maracuja', 80, 'imagens/maracuja.jpg')">
+                <div class="moldura-foto"> 
                     <img src="imagens/maracuja.jpg" alt="">
                 </div>
                 <p class="nome-produto">Maracuja 200g</p>
                 <p class="preco-produto">R$ 80,00</p>
             </div>
 
-            <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Morango', 80, 'imagens/morango.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/morango.jpg" alt="">
                 </div>
@@ -66,28 +66,44 @@
                 <p class="preco-produto">R$ 80,00</p>
             </div>
 
-            <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Uva', 80, 'imagens/uva.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/uva.jpg" alt="">
                 </div>
                 <p class="nome-produto">Uva verde 200g</p>
                 <p class="preco-produto">R$ 80,00</p>
             </div>
+             
+            <div class="card-produto" onclick="adicionarAoCarrinho('Paçoca', 80, 'imagens/Paçoca.jpg')">
+                <div class="moldura-foto">
+                    <img src="imagens/paçoca.jpg" alt="">
+                </div>
+                <p class="nome-produto">Paçoca 200g</p>
+                <p class="preco-produto">R$ 80,00</p>
+            </div>
+            
+            <div class="card-produto" onclick="adicionarAoCarrinho('Limão', 80, 'imagens/limão.jpg')">
+                <div class="moldura-foto">
+                    <img src="imagens/limão.jpg" alt="">
+                </div>
+                <p class="nome-produto">Limão 200g</p>
+                <p class="preco-produto">R$ 80,00</p>
+            </div>
+
             </section>
 
             <h2 class="titulo-secao">Gourmet</h2>
             <section class="vitrine">
-
-            <section>
-            <div class="card-produto">
-                <div class="moldura-foto">
-                    <img src="imagens/ferrero.jpg" alt="">
-                </div>
+            
+            <div class="card-produto" onclick="adicionarAoCarrinho('Ferrero Rocher', 100, 'imagens/ferrero.jpg')">
+            <div class="moldura-foto">
+                <img src="imagens/ferrero.jpg" alt="">
+            </div>
                 <p class="nome-produto">Ferrero Rocher 200g</p>
                 <p class="preco-produto">R$ 100,00</p>
             </div>
 
-             <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Kinder Bueno', 100, 'imagens/kinder.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/kinder.jpg" alt="">
                 </div>
@@ -95,7 +111,7 @@
                 <p class="preco-produto">R$ 100,00</p>
             </div>
 
-             <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('KitKat', 100, 'imagens/kitkat.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/kitkat.jpg" alt="">
                 </div>
@@ -103,7 +119,7 @@
                 <p class="preco-produto">R$ 100,00</p>
             </div>
              
-             <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('M&M', 100, 'imagens/mm.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/mm.jpg" alt="">
                 </div>
@@ -111,7 +127,7 @@
                 <p class="preco-produto">R$ 100,00</p>
             </div>
              
-             <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Ninho e Nutella', 100, 'imagens/Ninho e nutella.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/Ninho e nutella.jpg" alt="">
                 </div>
@@ -119,7 +135,7 @@
                 <p class="preco-produto">R$ 100,00</p>
             </div>
 
-             <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Oreo', 100, 'imagens/oreo.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/oreo.jpg" alt="">
                 </div>
@@ -127,15 +143,15 @@
                 <p class="preco-produto">R$ 100,00</p>
             </div>
 
-             <div class="card-produto">
+            <div class="card-produto" onclick="adicionarAoCarrinho('Ouro Branco', 100, 'imagens/ouro branco')">
                 <div class="moldura-foto">
                     <img src="imagens/ouro branco.jpg" alt="">
                 </div>
                 <p class="nome-produto">Ouro Branco 200g</p>
                 <p class="preco-produto">R$ 100,00</p>
             </div>
-             
-             <div class="card-produto">
+            
+            <div class="card-produto" onclick="adicionarAoCarrinho('Trio', 180, 'imagens/trio.jpg')">
                 <div class="moldura-foto">
                     <img src="imagens/trio.jpg" alt="">
                 </div>
@@ -146,6 +162,43 @@
             </section>
     </main>
 
+    <div id="sidebar-carrinho" class="sidebar">
+        <div class="sidebar-header">
+            <span class="fechar" onclick="toggleCarrinho()">X</span>
+            <h3>Seu Carrinho</h3>
+        </div>
+        <hr class="linha-divisoria">
+        <div id="itens-carrinho" class="lista-itens">
+            </div>
+        <div class="sidebar-footer">
+            <p>Total: <span id="total-carrinho">R$ 0,00</span></p>
+            <button class="btn-comprar" onclick="irParaCheckout()">Comprar Agora</button>
+        </div>
+    </div>
+
+    <div id="sidebar-checkout" class="sidebar">
+        <div class="sidebar-header">
+            <span class="voltar" onclick="voltarParaCarrinho()">←</span>
+            <h3>Finalizar Compra</h3>
+        </div>
+        <hr class="linha-divisoria">
+        <div class="form-checkout">
+            <input type="text" id="endereco" placeholder="Digite seu endereço e cidade">
+            <button onclick="calcularFrete()" class="btn-frete">Calcular Frete</button>
+            <div id="resultado-frete"></div>
+            
+            <div id="area-pagamento" style="display:none;">
+                <p>Pagamento via PIX</p>
+                <div class="qr-code">
+                    <img src="imagens/qrcode.jpg" alt="QR Code PIX" style="width:150px;">
+                </div>
+                <button class="btn-comprar" onclick="finalizarCompra()">Pagamento Realizado</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" onclick="fecharTudo()"></div>
+
     <footer>
         <img src="imagens/Ovo de Páscoa Caseiro Coelho Ilustrado Circular Amarelo Logotipo.png" alt="Logo" class="logo-footer">
         <div class="info-contato">
@@ -153,6 +206,7 @@
             <p>WhatsApp: (00) 00000-0000</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
