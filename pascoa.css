@@ -193,12 +193,55 @@ height: auto;
     margin-bottom: 15px;
     font-size: 14px;
 }
-.img-mini { width: 50px; height: 50px; object-fit: cover; border-radius: 5px; }
-.controles-qtd { display: flex; align-items: center; border: 1px solid #ddd; border-radius: 5px; }
-.controles-qtd button { border: none; background: #eee; padding: 2px 8px; cursor: pointer; }
-.controles-qtd span { padding: 0 10px; }
+.img-mini{
+width: 50px; 
+height: 50px; 
+object-fit: cover; 
+border-radius: 5px;
+}
 
-.sidebar-footer { margin-top: auto; padding-bottom: 20px; }
-.btn-comprar { width: 100%; padding: 15px; background: #ac7207; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
-.btn-frete { margin: 10px 0; padding: 8px; cursor: pointer; }
-#endereco { width: 100%; padding: 10px; margin-top: 10px; }
+.controles-qtd{
+display: flex;
+align-items: center; 
+border: 1px solid #ddd; 
+border-radius: 5px; 
+}
+
+.controles-qtd button{ 
+border: none; 
+background: #eee; 
+padding: 2px 8px; 
+cursor: pointer; 
+}
+
+.controles-qtd span{ 
+padding: 0 10px;
+}
+
+.sidebar-footer{
+margin-top: auto; 
+padding-bottom: 20px;
+}
+
+.btn-comprar{ 
+width: 100%; 
+padding: 15px; 
+background: #ac7207; 
+color: white; 
+border: none; 
+border-radius: 8px; 
+cursor: pointer; 
+font-weight: bold;
+}
+
+.btn-frete{ 
+margin: 10px 0; 
+padding: 8px; 
+cursor: pointer; 
+}
+
+#endereco{ 
+width: 100%;
+padding: 10px; 
+margin-top: 10px;
+}

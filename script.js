@@ -86,7 +86,7 @@ function calcularFrete() {
     const res = document.getElementById('resultado-frete');
     const pag = document.getElementById('area-pagamento');
     
-    // Verifica se alguma cidade da lista está no texto do endereço
+    // verifica a cidade
     const atende = cidadesAtendidas.some(cidade => endereco.includes(cidade));
 
     if (atende) {
@@ -100,7 +100,7 @@ function calcularFrete() {
 
 function finalizarCompra() {
     alert("Compra finalizada, aguarde seu pedido!");
-    location.reload(); // Recarrega a página para limpar tudo
+    location.reload(); // recarrega a imagem
 }
 
 function fecharTudo() {
